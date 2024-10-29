@@ -1,0 +1,416 @@
+{
+	"apiVersion": "1",
+	"name": "ttp/tiktok-player",
+	"title": "B TikTok Feed",
+	"description": "Embed Tiktok feed in your website",
+	"category": "widgets",
+	"keywords": [
+		"tiktok",
+		"feed",
+		"tiktok gallery"
+	],
+	"textdomain": "tiktok",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": ""
+		},
+		"cId": {
+			"type": "string",
+			"default": ""
+		},
+		"profileCacheT": {
+			"type": "string",
+			"default": "5em"
+		},
+		"videoCacheT": {
+			"type": "string",
+			"default": "60px"
+		},
+		"videosLists": {
+			"type": "object",
+			"default": {
+				"desktop": 9,
+				"tablet": 5,
+				"mobile": 2
+			}
+		},
+		"isProfile": {
+			"type": "boolean",
+			"default": true
+		},
+		"isVideos": {
+			"type": "boolean",
+			"default": true
+		},
+		"isBtn": {
+			"type": "object",
+			"default": {
+				"viewOn": false,
+				"loadMore": true
+			}
+		},
+		"profilebgColor": {
+			"type": "string",
+			"default": "#000"
+		},
+		"globalPColor": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"profileAlignment": {
+			"type": "string",
+			"default": "center"
+		},
+		"profilePadding": {
+			"type": "object",
+			"default": {
+				"top": "10px",
+				"right": "20px",
+				"bottom": "10px",
+				"left": "20px"
+			}
+		},
+		"profilebgCTop": {
+			"type": "string",
+			"default": "#333"
+		},
+		"profilebgCbottom": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"displayNameColor": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"nameTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 32,
+					"tablet": 25,
+					"mobile": 18
+				},
+				"fontWeight": 700,
+				"lineHeight": "135%"
+			}
+		},
+		"btnPadding": {
+			"type": "object",
+			"default": {
+				"top": "4px",
+				"right": "8px",
+				"bottom": "4px",
+				"left": "8px"
+			}
+		},
+		"shareBtnTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 18,
+					"tablet": 15,
+					"mobile": 13
+				},
+				"fontWeight": 600,
+				"lineHeight": "135%"
+			}
+		},
+		"sharebtnColors": {
+			"type": "object",
+			"default": {
+				"color": "#fff",
+				"bg": "#ff3b5c"
+			}
+		},
+		"sharebtnHoverColors": {
+			"type": "object",
+			"default": {
+				"color": "#fff",
+				"bg": "#000"
+			}
+		},
+		"pLayoutStyle": {
+			"type": "string",
+			"default": "default"
+		},
+		"feedLayoutStyle": {
+			"type": "string",
+			"default": "default"
+		},
+		"countNumColor": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"TextColor": {
+			"type": "string",
+			"default": "#ffffffbf"
+		},
+		"InfoTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 16,
+					"tablet": 15,
+					"mobile": 15
+				},
+				"font-weight": 400,
+				"text-transform": "capitalize"
+			}
+		},
+		"videoCoverImage": {
+			"type": "object",
+			"default": {
+				"ratio": "9:16"
+			}
+		},
+		"borderColor": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"bioColor": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"bioTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 16,
+					"tablet": 15,
+					"mobile": 14
+				},
+				"fontWeight": 400,
+				"lineHeight": "135%"
+			}
+		},
+		"isLightbox": {
+			"type": "boolean",
+			"default": true
+		},
+		"isLike": {
+			"type": "boolean",
+			"default": true
+		},
+		"isComment": {
+			"type": "boolean",
+			"default": true
+		},
+		"isView": {
+			"type": "boolean",
+			"default": true
+		},
+		"isProfileImg": {
+			"type": "boolean",
+			"default": true
+		},
+		"isDisplayName": {
+			"type": "boolean",
+			"default": true
+		},
+		"shareBtn": {
+			"type": "string",
+			"default": "share"
+		},
+		"isShareBtn": {
+			"type": "boolean",
+			"default": true
+		},
+		"isFollowing": {
+			"type": "boolean",
+			"default": true
+		},
+		"isFollowers": {
+			"type": "boolean",
+			"default": true
+		},
+		"isTotalLike": {
+			"type": "boolean",
+			"default": true
+		},
+		"isBio": {
+			"type": "boolean",
+			"default": true
+		},
+		"layoutColors": {
+			"type": "object",
+			"default": {
+				"bg": "",
+				"color": ""
+			}
+		},
+		"loadMoreBtnColors": {
+			"type": "object",
+			"default": {
+				"color": "#fff",
+				"bg": "#fe2c55"
+			}
+		},
+		"loadMoreBtn": {
+			"type": "string",
+			"default": "Load More"
+		},
+		"loadMoreBtnHoverColors": {
+			"type": "object",
+			"default": {
+				"color": "#000",
+				"bg": "#fff"
+			}
+		},
+		"overlyColor": {
+			"type": "string",
+			"default": "#00000026"
+		},
+		"overlyIconColor": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"overlyIcon": {
+			"type": "object",
+			"default": {
+				"size": 18
+			}
+		},
+		"icon": {
+			"type": "object",
+			"default": {
+				"color": "#777777",
+				"size": 13
+			}
+		},
+		"isPopupContent": {
+			"type": "object",
+			"default": {
+				"rightContent": false
+			}
+		},
+		"popPNameTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 18,
+					"tablet": 15,
+					"mobile": 14
+				},
+				"fontWeight": 500,
+				"lineHeight": "135%"
+			}
+		},
+		"popPNameColor": {
+			"type": "string",
+			"default": "#000000e8"
+		},
+		"popPLinkTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 18,
+					"tablet": 15,
+					"mobile": 14
+				},
+				"fontWeight": 400,
+				"lineHeight": "135%"
+			}
+		},
+		"popPLinkColor": {
+			"type": "string",
+			"default": "#000000d6"
+		},
+		"popPSingleItemLinkTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 14,
+					"tablet": 14,
+					"mobile": 12
+				},
+				"fontWeight": 400,
+				"lineHeight": "135%"
+			}
+		},
+		"popPSingleItemLinkColor": {
+			"type": "string",
+			"default": "#000000c7"
+		},
+		"btnTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 16,
+					"tablet": 15,
+					"mobile": 14
+				},
+				"fontWeight": 500,
+				"lineHeight": "135%"
+			}
+		},
+		"viewLoadBtnPadding": {
+			"type": "object",
+			"default": {
+				"top": "6px",
+				"right": "12px",
+				"bottom": "6px",
+				"left": "12px"
+			}
+		},
+		"viewLoadBtnIcon": {
+			"type": "object",
+			"default": {
+				"size": 16
+			}
+		},
+		"columns": {
+			"type": "object",
+			"default": {
+				"desktop": 3,
+				"tablet": 2,
+				"mobile": 1
+			}
+		},
+		"columnGap": {
+			"type": "string",
+			"default": "30px"
+		},
+		"rowGap": {
+			"type": "string",
+			"default": "30px"
+		},
+		"layout": {
+			"type": "string",
+			"default": "vertical"
+		},
+		"authorized": {
+			"type": "boolean",
+			"default": true
+		},
+		"videosInfo": {
+			"type": "object",
+			"default": {
+				"date": true,
+				"like": true,
+				"comment": true,
+				"title": true,
+				"line": true
+			}
+		}
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"html": false
+	},
+	"example": {
+		"attributes": {
+			"preview": true,
+			"columns": {
+				"desktop": 1,
+				"tablet": 1,
+				"mobile": 1
+			}
+		}
+	},
+	"editorScript": "file:dist/editor.js",
+	"viewScript": "ttp-script"
+}
